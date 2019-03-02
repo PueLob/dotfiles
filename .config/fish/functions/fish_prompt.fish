@@ -36,6 +36,7 @@ function fish_prompt
   set -g __fish_git_prompt_show_informative_status true
   
   # Line 1
+  # There is something wrong with gitprompt display
   echo -n $cyan'┌['$white$USER$cyan'@'$white$__fish_prompt_hostname$cyan']'$yellow'['$white(prompt_pwd)$yellow']'
   __fish_git_prompt $github'['"git://%s"$github']'
   echo
