@@ -38,17 +38,29 @@ colorscheme gruvbox
 " set background=dark
 set number
 set clipboard+=unnamedplus
+set autoread
+" completion line height
+set pumheight=10
+" TAB settings
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
 set smartindent
 set list
-" 不可視文字の設定が上手く反映されない謎
-" set lcs=tab:>-,trail:*
-"set showtabline=2
 set laststatus=2
+" bracket completion
+inoremap { {}<LEFT>
+inoremap ( ()<LEFT>
+inoremap < <><LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+inoremap [ []<LEFT>
+
 set nowritebackup
 set nobackup
 set noswapfile
 " jediの補完時に出るdocstringを潰す
 set completeopt-=preview
+" 不可視文字の設定が上手く反映されない謎
+" set lcs=tab:>-,trail:*
