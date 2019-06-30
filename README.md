@@ -19,7 +19,7 @@
 ## AUR
 - google-chrome
 - yay-bin
-    - yaourt が out-of-date になってたので、と思ったんだけどなんか復活してない？
+    - yaourt が out-of-date になってたので
 - ttf-cica
     - ターミナル作業で使いやすく見やすいフォント
 - etcher
