@@ -56,7 +56,8 @@ inoremap < <><LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
 inoremap [ []<LEFT>
-
+" no highlight search key ESC
+nnoremap <ESC><ESC> :nohlsearch<CR>
 set nowritebackup
 set nobackup
 set noswapfile
