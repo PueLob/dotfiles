@@ -49,6 +49,9 @@ set shiftwidth=4
 set smartindent
 set list
 set laststatus=2
+set nowritebackup
+set nobackup
+set noswapfile
 " bracket completion
 inoremap { {}<LEFT>
 inoremap ( ()<LEFT>
@@ -58,9 +61,8 @@ inoremap ' ''<LEFT>
 inoremap [ []<LEFT>
 " no highlight search key ESC
 nnoremap <ESC><ESC> :nohlsearch<CR>
-set nowritebackup
-set nobackup
-set noswapfile
+" Return to Terminal-Normal with ESC
+tnoremap <silent> <ESC> <C-\><C-n>
 " jediの補完時に出るdocstringを潰す
 set completeopt-=preview
 " 不可視文字の設定が上手く反映されない謎
